@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta, links and title-->
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Snazzy Paws Grooming</title>
+    </head>
+    <body>
+        <!--heading-->
+        <div id="head">
+            <H1 id="book">Book online with us</H1>         
+        </div>
+        <header>
+            <!--navigation with logo-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <logo>Snazzy<br/>Paws</logo>
+                </ul>
+            </nav>
+        </header> 
+        <!--opening paragraph of booking-->
+        <p id="bookinf"> Booking a grooming appointment is easy with our online calendar. Simply select a date and time that works for you, and choose the services your dog needs. Our calendar is updated in real-time, so you can always see what's available. If you have any questions or need help booking an appointment, feel free to contact us, on our contacts page. </p>         
+        <!-- Booking form -->
+        <div>
+            <form id="booking-form">
+                <h2>Service booking</h2>
+                    <!-- Service selection -->
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="bathing">Wash and shampoo</option>
+                        <option value="nail-trimming">Nail Trim</option>
+                        <option value="cut">Cut and coat trim</option>
+                        <option value="brushing">Brushing</option>
+                        <option value="full groom s">Full groom small</option>
+                        <option value="full groom m">Full groom medium</option>
+                        <option value="full groom l">Full groom large</option>
+                    </select>
+            </form>
+        </div>    
+        <!--hidden form-->
+        <form id="hidden-form" style="display: none;">
+            <input type="text" id="owner-name-hidden" name="owner-name">
+            <input type="email" id="email-hidden" name="email">
+            <input type="text" id="dog-name-hidden" name="dog-name">
+            <input type="text" id="breed-hidden" name="breed">
+            <input type="number" id="age-hidden" name="age">
+            <input type="date" id="date-hidden" name="date">
+            <input type="time" id="time-hidden" name="time">
+        </form>
+        <!--Booking form-->
+        <form id="booking-form1">
+            <!--Name field-->
+            <label for="owner-name">Owner's Name:</label>
+            <input type="text" id="owner-name" name="owner-name" required>
+            <!--email field-->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <!--dogs name field-->
+            <label for="dog-name">Dog's Name:</label>
+            <input type="text" id="dog-name" name="dog-name" required>
+            <!--dog breed field-->
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" required>
+            <!--dogs age field-->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <!--Appointed date filed-->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <!--Appointed time filed-->
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <!--submit button-->
+            <button type="submit">Book Now</button>
+        </form>
+        <form>
+            <div class="booking2">
+                <!-- Additional services/products plus its heading -->
+                <h2>Additional Services / Products</h2>
+                <ul class="addition">
+                    <li>
+                        <input type="checkbox" id="additional-service-1" name="additional-services[]" value="ear clean">
+                        <label for="additional-service-1">Ear clean</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="additional-service-2" name="additional-services[]" value="shampoo">
+                        <label for="additional-service-2">Doggy-do-Shampoo</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="additional-service-3" name="additional-services[]" value="Conditioner">
+                        <label for="additional-service-3">Natural & fresh Conditioner</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="additional-service-4" name="additional-services[]" value="mobile">
+                        <label for="additional-service-3">Mobile service</label>
+                    </li>
+                </ul>
+                <!-- Payment gateway as we are not meant make it work it just links back to the booking form-->
+                <h2>Payment Method</h2>
+                    <input class="button" type="submit" value="Pay Now">
+            </div>
+        </form>
+            <br>
+            <br>
+    <footer>
+        <!--footer with some info-->
+        <h4>Opening Hours</h4>
+        <p>Monday to Saturday 8am to 4:30pm</p>
+        <p>Copy right and copy 2025</p>
+    </footer>
+    </body>
+</html>
